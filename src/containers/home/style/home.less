@@ -1,0 +1,72 @@
+.home {
+  .splash {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    .splash-title {
+      display: none;
+      position: absolute;
+      left: 34%;
+      top: 8%;
+      padding: 2rem 10rem;
+
+      border: 1px solid;
+      border-radius: 4px;
+
+      background: rgba(20,20,20,0.3);
+      font-size: xx-large;
+      color: white;
+    }
+  }
+  .owsc-info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 2rem;
+    .owner-image {
+      height: auto;
+      flex: 0 0 200px;
+
+      img {
+        width: 100%;
+        border-radius: 25%;
+      }
+    }
+    .owner-text {
+      flex: 1 1 auto;
+      margin-top: 1rem;
+      font-size: medium;
+      text-align: center;
+    }
+  }
+  .result-container {
+    margin: 1rem;
+    margin-bottom: 10rem;
+    height: 100%;
+    overflow-y: auto;
+
+
+    .title {
+      background-color: transparent;
+      padding: 1.0rem;
+      color: black;
+      text-shadow: 1px 1px grey;
+      font-size: 30px;
+      border-radius: 4px;
+
+      text-align: center;
+    }
+    .result-lists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .title {
+          background-color: transparent;
+      }
+
+    }
+  }
+}

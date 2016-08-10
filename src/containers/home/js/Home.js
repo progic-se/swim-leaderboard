@@ -64,14 +64,9 @@ class Home extends Component {
 
               </div>
           </div>
-
           <div className="result-container">
-              <div className="title">
-                Resultatlista
-              </div>
               <div className="result-lists">
-                <ResultList title="Herrar" items={leaderboard.male}></ResultList>
-                <ResultList title="Damer" items={leaderboard.female}></ResultList>
+                <ResultList title="Resultat" items={leaderboard.all}></ResultList>
               </div>
           </div>
         </div>

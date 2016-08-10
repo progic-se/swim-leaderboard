@@ -24,10 +24,10 @@ const msToTime = (duration) => {
 
 const sortArrayByNetTime = (arr) => {
     arr.sort((a,b) => {
-      if (a.netTime < b.netTime) {
+      if (a.endTime < b.endTime) {
         return -1;
       }
-      if (a.netTime > b.netTime) {
+      if (a.endTime > b.endTime) {
         return 1;
       }
 
@@ -38,15 +38,10 @@ const sortArrayByNetTime = (arr) => {
 }
 const createLeadeboardModel = (leaderboard) => {
 
-  leaderboard.male = sortArrayByNetTime(leaderboard.male);
-  leaderboard.female = sortArrayByNetTime(leaderboard.female);
+  leaderboard.all = sortArrayByNetTime(leaderboard.all);
 
-  leaderboard.male.forEach((item) => {
-    item.displayTime = msToTime(item.netTime);
-  });
-
-  leaderboard.female.forEach((item) => {
-    item.displayTime = msToTime(item.netTime);
+  leaderboard.all.forEach((item) => {
+    item.displayTime = msToTime(item.endTime);
   });
 
 
